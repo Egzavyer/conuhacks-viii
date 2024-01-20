@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GunSpecs : MonoBehaviour
 {
-    public static float rateOfFire = 5f;
+    public static float rateOfFire = 1f;
     public static string gunType = "Pistol";
     public static float bulletDamage = 1f;
     public static float bulletSpeed = 10f;

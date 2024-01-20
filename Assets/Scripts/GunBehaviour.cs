@@ -9,6 +9,7 @@ public class GunBehaviour : MonoBehaviour
     GunSpecs gunSpecs;
     public float bulletSpeed;
     public float rateOfFire;
+    PlayerMovement playerMovement;
 
     void Start()
     {
@@ -19,9 +20,10 @@ public class GunBehaviour : MonoBehaviour
 
     void Shoot()
     {
+        if (!PlayerMovement.isWalking)
+        {
         var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
         bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right * bulletSpeed;
+        }
     }
-
-
 }

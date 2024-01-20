@@ -26,7 +26,6 @@ public class ZombieType : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Bullet")) {
                 health -= damage;
-                Debug.Log("Health: " + health.ToString());
             }
             
         }
