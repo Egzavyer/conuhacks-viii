@@ -9,9 +9,12 @@ public class ZombieType : MonoBehaviour
     public float health = 3f;
     public float damage;
     GunSpecs gunSpecs;
+    Rigidbody2D zombieRB;
     // Start is called before the first frame update
     void Start()
     {
+        zombieRB = GetComponent<Rigidbody2D>();
+        zombieRB.constraints = RigidbodyConstraints2D.FreezeRotation;
         damage = GunSpecs.bulletDamage;
     }
 
