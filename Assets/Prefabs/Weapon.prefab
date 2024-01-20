@@ -146,7 +146,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eed74a7400f023d42b3760d2a9654388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rateOfFire: 5
-  gunType: Pistol
-  bulletDamage: 1
-  bulletSpeed: 10
