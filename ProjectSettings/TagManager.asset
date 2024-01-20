@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Bullet
   - GameOverLine
+  - FinalScoreText
   layers:
   - Default
   - TransparentFX
