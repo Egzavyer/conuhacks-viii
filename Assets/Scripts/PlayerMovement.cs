@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     //Speed at which the player moves
-    public float movementSpeed = 10f;
+    public float movementSpeed = 5f;
 
     //The player's Rigidbody
-    Rigidbody2D playerRb;
+    private Rigidbody2D playerRb;
     void Start()
     {
         //Get the player's rigidbody
