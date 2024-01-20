@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1361019997
+--- !u!1001 &614415803
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -178,29 +178,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8831014932129195204, guid: 1302cfd1e22ee2b44be2ce2b6d1c9798, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1361019999}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1302cfd1e22ee2b44be2ce2b6d1c9798, type: 3}
---- !u!1 &1361019998 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8831014932129195204, guid: 1302cfd1e22ee2b44be2ce2b6d1c9798, type: 3}
-  m_PrefabInstance: {fileID: 1361019997}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1361019999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361019998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30ae023c406b80944b268b1e810b3cb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zombieMovementSpeed: 2
 --- !u!1001 &951960298906137310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -532,7 +511,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 2623501741292377733}
   - {fileID: 7756431286346465941}
-  - {fileID: 1361019997}
+  - {fileID: 614415803}
   - {fileID: 951960298906137310}
   - {fileID: 6155027794423655862}
   - {fileID: 1539999022771898268}

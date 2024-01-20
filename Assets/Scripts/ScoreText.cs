@@ -10,7 +10,7 @@ public class ScoreText : MonoBehaviour
     public float score = 0f;
     void Start()
     {
-        InvokeRepeating("IncreaseScoreEverySecond", 0, 1.0f);
+        InvokeRepeating(nameof(IncreaseScoreEverySecond), 0, 0.001f);
     }
 
     void Update()
