@@ -18,10 +18,10 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(cash);
     }
 
-    public void UpdateCash(){
+    public void UpdateCash()
+    {
         cash += (int)(10 * (wave / 2.0f));
     }
 
