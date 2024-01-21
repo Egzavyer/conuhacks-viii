@@ -7,7 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class ScoreText : MonoBehaviour
 {
     public TMP_Text scoreText;
-    public float score = 0f;
+    public static float score = 0f;
     void Start()
     {
         InvokeRepeating(nameof(IncreaseScoreEverySecond), 0, 0.001f);

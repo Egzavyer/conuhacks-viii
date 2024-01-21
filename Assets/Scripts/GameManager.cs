@@ -7,6 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class GameManager : MonoBehaviour
 {
     public static float score;
+
     void Start()
     {
     }
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     public static void GameOver()
     {
         //Debug.Log("Game Over");
+        score = ScoreText.score;
         SceneManager.LoadScene("GameOver");
     }
 }
