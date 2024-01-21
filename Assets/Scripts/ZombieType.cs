@@ -11,6 +11,7 @@ public class ZombieType : MonoBehaviour
     GunSpecs gunSpecs;
     Rigidbody2D zombieRB;
     public Animator animatorZombie;
+    public bool isDying = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class ZombieType : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -31,16 +32,16 @@ public class ZombieType : MonoBehaviour
             health -= damage;
             animatorZombie.SetBool("isHit", true);
             StartCoroutine(ResetIsHit());
-            if (health <= 0)
-            {
-                Death();
-            }
-
+            if (health <= 0 )
+        {
+            Death();
+        }
+           
             //GameManager.cash += (10 * (GameManager.wave / 2));
-
+        
         }
     }
-
+    
     private IEnumerator ResetIsHit()
     {
         yield return new WaitForSeconds(0.1f);
@@ -57,9 +58,9 @@ public class ZombieType : MonoBehaviour
     }
     private void Death()
     {
-
+          
         animatorZombie.SetTrigger("death");
         zombieRB.bodyType = RigidbodyType2D.Static;
-
+         
     }
 }
