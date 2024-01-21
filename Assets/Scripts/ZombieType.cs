@@ -24,7 +24,7 @@ public class ZombieType : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -33,17 +33,14 @@ public class ZombieType : MonoBehaviour
             health -= damage;
             animatorZombie.SetBool("isHit", true);
             StartCoroutine(ResetIsHit());
-            if (health <= 0 )
-        {
-             Destroy(gameObject);
-             gameManager.UpdateCash();
-        }
-           
-            
-        
+            if (health <= 0)
+            {
+                Destroy(gameObject);
+                gameManager.UpdateCash();
+            }
         }
     }
-    
+
     private IEnumerator ResetIsHit()
     {
         yield return new WaitForSeconds(0.1f);
@@ -58,5 +55,5 @@ public class ZombieType : MonoBehaviour
             GameManager.GameOver();
         }
     }
-   
+
 }
