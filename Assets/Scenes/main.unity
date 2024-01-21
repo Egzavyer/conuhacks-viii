@@ -131,9 +131,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 734729234865561605, guid: 98dfbc60ba4f4cd46bdfd9a85c4db62a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 734729234865561605, guid: 98dfbc60ba4f4cd46bdfd9a85c4db62a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 734729234865561605, guid: 98dfbc60ba4f4cd46bdfd9a85c4db62a, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2531867997362466185, guid: 98dfbc60ba4f4cd46bdfd9a85c4db62a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 2531867997362466185, guid: 98dfbc60ba4f4cd46bdfd9a85c4db62a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 2531867997362466185, guid: 98dfbc60ba4f4cd46bdfd9a85c4db62a, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3091553454965324063, guid: 98dfbc60ba4f4cd46bdfd9a85c4db62a, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952900733852968678, guid: 98dfbc60ba4f4cd46bdfd9a85c4db62a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 6952900733852968678, guid: 98dfbc60ba4f4cd46bdfd9a85c4db62a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 6952900733852968678, guid: 98dfbc60ba4f4cd46bdfd9a85c4db62a, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8217735536307575731, guid: 98dfbc60ba4f4cd46bdfd9a85c4db62a, type: 3}
       propertyPath: m_Pivot.x
@@ -242,7 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cashText: {fileID: 951960298906137315}
-  gameManager: {fileID: 346751567}
+  gameManager: {fileID: 0}
 --- !u!114 &951960298906137315 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 734729234865561605, guid: 98dfbc60ba4f4cd46bdfd9a85c4db62a, type: 3}
