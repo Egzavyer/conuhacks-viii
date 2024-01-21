@@ -23,13 +23,7 @@ public class ZombieType : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health <= 0 && !isDying)
-        {
-            isDying = true;
-            animatorZombie.SetBool("isDead", true);
-            StartCoroutine(WaitForDeath());
-            //GameManager.cash += (10 * (GameManager.wave / 2));
-        }
+        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -38,19 +32,22 @@ public class ZombieType : MonoBehaviour
             health -= damage;
             animatorZombie.SetBool("isHit", true);
             StartCoroutine(ResetIsHit());
+            if (health <= 0 )
+        {
+            Death();
+        }
+           
+            //GameManager.cash += (10 * (GameManager.wave / 2));
+        
         }
     }
+    
     private IEnumerator ResetIsHit()
     {
         yield return new WaitForSeconds(0.1f);
         animatorZombie.SetBool("isHit", false);
     }
 
-    private IEnumerator WaitForDeath()
-    {
-        yield return new WaitForSeconds(1.5f);
-        Destroy(gameObject);
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -58,5 +55,12 @@ public class ZombieType : MonoBehaviour
         {
             GameManager.GameOver();
         }
+    }
+    private void Death()
+    {
+          
+        animatorZombie.SetTrigger("death");
+        zombieRB.bodyType = RigidbodyType2D.Static;
+         
     }
 }
