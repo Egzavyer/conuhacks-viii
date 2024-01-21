@@ -15,15 +15,15 @@ public class GunBehaviour : MonoBehaviour
     {
         rateOfFire = GunSpecs.rateOfFire;
         bulletSpeed = GunSpecs.bulletSpeed;
-        InvokeRepeating(nameof(Shoot), 0, rateOfFire);
+        InvokeRepeating(nameof(Shoot), 2.0f, rateOfFire);
     }
 
     void Shoot()
     {
         if (!PlayerMovement.isWalking)
         {
-        var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right * bulletSpeed;
+            var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+            bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right * bulletSpeed;
         }
     }
 }
