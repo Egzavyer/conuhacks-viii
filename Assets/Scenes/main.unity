@@ -232,6 +232,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7453346420670723326, guid: fa3089f6e70a649f5beac296cdcb701c, type: 3}
+      propertyPath: zombiePrefab
+      value: 
+      objectReference: {fileID: 5433047163846909224, guid: 9ffb6ca9256834ed6ac0047a1afe5aad, type: 3}
     - target: {fileID: 2144373605820201129, guid: fa3089f6e70a649f5beac296cdcb701c, type: 3}
       propertyPath: m_Name
       value: ZombieSpawner
