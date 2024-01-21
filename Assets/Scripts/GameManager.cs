@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        cash = PlayerPrefs.GetInt("cash", 0);
         GameObject.Find("WaveText").GetComponent<TMP_Text>().text = "Wave " + wave.ToString();
         Invoke(nameof(HideWaveText), 2.0f);
     }
@@ -21,7 +22,8 @@ public class GameManager : MonoBehaviour
         Debug.Log(cash);
     }
 
-    public void UpdateCash(){
+    public void UpdateCash()
+    {
         cash += (int)(10 * (wave / 2.0f));
     }
 
@@ -29,10 +31,12 @@ public class GameManager : MonoBehaviour
     {
         //Debug.Log("Game Over");
         //score = ScoreText.score;
+        PlayerPrefs.SetInt("cash", cash);
         SceneManager.LoadScene("GameOver");
     }
     public static void NextWave()
     {
+        PlayerPrefs.SetInt("cash", cash);
         wave += 1;
         SceneManager.LoadScene("main");
     }
