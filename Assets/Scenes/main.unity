@@ -469,6 +469,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 7961343624013978123, guid: d4286afb64327d542b4d05d62f80fa0a, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.26517445
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961343624013978123, guid: d4286afb64327d542b4d05d62f80fa0a, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.5566038
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961343624013978123, guid: d4286afb64327d542b4d05d62f80fa0a, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.27678767
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -600,9 +612,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 757303219496161150, guid: d633d5903f4bf1c42bf944735e5853de, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -827145008, guid: 31b395afa54e0464587509b59f74f3ba, type: 3}
+    - target: {fileID: 2702992869282816384, guid: d633d5903f4bf1c42bf944735e5853de, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702992869282816384, guid: d633d5903f4bf1c42bf944735e5853de, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702992869282816384, guid: d633d5903f4bf1c42bf944735e5853de, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372873238830113568, guid: d633d5903f4bf1c42bf944735e5853de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372873238830113568, guid: d633d5903f4bf1c42bf944735e5853de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8372873238830113568, guid: d633d5903f4bf1c42bf944735e5853de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.3
+      value: -7.68
       objectReference: {fileID: 0}
     - target: {fileID: 8372873238830113568, guid: d633d5903f4bf1c42bf944735e5853de, type: 3}
       propertyPath: m_LocalPosition.y
@@ -646,13 +682,42 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8372873238830113568, guid: d633d5903f4bf1c42bf944735e5853de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1299422109535774418}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 634426976267395162, guid: d633d5903f4bf1c42bf944735e5853de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7756431286346465944}
   m_SourcePrefab: {fileID: 100100000, guid: d633d5903f4bf1c42bf944735e5853de, type: 3}
 --- !u!4 &7756431286346465942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8372873238830113568, guid: d633d5903f4bf1c42bf944735e5853de, type: 3}
   m_PrefabInstance: {fileID: 7756431286346465941}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7756431286346465943 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 634426976267395162, guid: d633d5903f4bf1c42bf944735e5853de, type: 3}
+  m_PrefabInstance: {fileID: 7756431286346465941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7756431286346465944
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756431286346465943}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5445bd1a1fc834cad9055baf4486fb70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

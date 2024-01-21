@@ -10,10 +10,13 @@ public class PlayerMovement : MonoBehaviour
 
     //The player's Rigidbody
     private Rigidbody2D playerRb;
+    public Animator animator;
+
     void Start()
     {
         //Get the player's rigidbody
         playerRb = GetComponent<Rigidbody2D>();
+        
     }
 
     void Update()
@@ -25,11 +28,19 @@ public class PlayerMovement : MonoBehaviour
             if (transform.position.y <= 4.3)
             {
                 isWalking = true;
+                
+                animator.SetBool("isWalkingUp", true);
                 transform.position = transform.position + new Vector3(0, movementSpeed * Time.deltaTime, 0);
             }
+           
         }
         else{
-            isWalking = false;}
+            isWalking = false;
+            animator.SetBool("isWalkingUp", false);
+            
+
+            }
+            
 
         //If S is pressed, move down
         if (Input.GetKey(KeyCode.S))
@@ -38,11 +49,16 @@ public class PlayerMovement : MonoBehaviour
             if (transform.position.y >= -4.3)
             {
                 isWalking = true;
+                
+                animator.SetBool("isWalkingDown", true);
                 transform.position = transform.position + new Vector3(0, -movementSpeed * Time.deltaTime, 0);
             }
         }
         else{
-            isWalking = false;}
+            isWalking = false;
+            animator.SetBool("isWalkingDown", false);
+            
+            }
 
     }
 }
