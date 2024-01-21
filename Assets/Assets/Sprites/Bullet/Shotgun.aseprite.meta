@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7bb34dcfbbf2d5a449fec237bbcc496c
+guid: 664945b891f96ad46aaf2c385c32051e
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: GrassandRock
+  - name: Shotgun
     originalName: 
-    pivot: {x: 0.55172414, y: -0.33333334}
+    pivot: {x: 0.5, y: -1.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 58
-      height: 48
-    spriteID: 32ac90c5b03649e40ba9b69b712013ba
+      width: 26
+      height: 8
+    spriteID: 5034bb258b50de641938beb5b11359cb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,23 +142,23 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1419833560
-    name: GrassandRock
+    guid: 1823766332
+    name: Shotgun
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: GrassandRock
+    - name: Shotgun
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 16
-        width: 58
-        height: 48
-      spriteId: 32ac90c5b03649e40ba9b69b712013ba
+        x: 3
+        y: 12
+        width: 26
+        height: 8
+      spriteId: 5034bb258b50de641938beb5b11359cb
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 64}
+  canvasSize: {x: 32, y: 32}

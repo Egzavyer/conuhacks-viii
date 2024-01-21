@@ -9,15 +9,43 @@ public class GameManager : MonoBehaviour
 {
     public static int cash = 0;
     public static int wave = 1;
+    public GameObject shopPanel;
+    public GameObject scoreText;
+    public GameObject cashText;
+    public GameObject waveText;
+    public static bool shopOpen = false;
 
     void Start()
     {
         GameObject.Find("WaveText").GetComponent<TMP_Text>().text = "Wave " + wave.ToString();
         Invoke(nameof(HideWaveText), 2.0f);
+        shopPanel.SetActive(false);
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            if (!shopOpen)
+            {
+                shopOpen = true;
+                scoreText.SetActive(false);
+                cashText.SetActive(false);
+                waveText.SetActive(false);
+                shopPanel.SetActive(true);
+                PauseGame();
+            }
+            else if (shopOpen)
+            {
+                shopOpen = false;
+                scoreText.SetActive(true);
+                cashText.SetActive(true);
+                waveText.SetActive(true);
+                shopPanel.SetActive(false);
+                ResumeGame();
+            }
+
+        }
     }
 
     public void UpdateCash()
@@ -39,6 +67,18 @@ public class GameManager : MonoBehaviour
 
     void HideWaveText()
     {
-        GameObject.Find("WaveText").GetComponent<TMP_Text>().text = "";
+        if (GameObject.Find("WaveText") != null)
+        {
+            GameObject.Find("WaveText").GetComponent<TMP_Text>().text = "";
+        }
+    }
+    void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+
+    void ResumeGame()
+    {
+        Time.timeScale = 1;
     }
 }
