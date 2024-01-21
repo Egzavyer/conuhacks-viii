@@ -22,26 +22,30 @@ public class ZombieType : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health <= 0) {
+        if (health <= 0)
+        {
             Destroy(gameObject);
             //animatorZombie.SetBool("isDead", true);
             //GameManager.cash += (10 * (GameManager.wave / 2));
         }
         //animatorZombie.SetBool("isDead", false);
     }
-    private void OnCollisionEnter2D(Collision2D collision) 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Bullet"))
         {
-            if (collision.gameObject.CompareTag("Bullet")) {
-                health -= damage;
-                animatorZombie.SetBool("isHit", true);
+            health -= damage;
+            animatorZombie.SetBool("isHit", true);
 
-            }
-             animatorZombie.SetBool("isHit", false);
         }
+        //animatorZombie.SetBool("isHit", false);
+    }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("GameOverLine")) {
-                GameManager.GameOver();
-            }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("GameOverLine"))
+        {
+            GameManager.GameOver();
+        }
     }
 }
