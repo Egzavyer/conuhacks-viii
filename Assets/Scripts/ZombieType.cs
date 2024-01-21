@@ -23,6 +23,7 @@ public class ZombieType : MonoBehaviour
     {
         if (health <= 0) {
             Destroy(gameObject);
+            //GameManager.cash += (10 * (GameManager.wave / 2));
         }
     }
     private void OnCollisionEnter2D(Collision2D collision) 

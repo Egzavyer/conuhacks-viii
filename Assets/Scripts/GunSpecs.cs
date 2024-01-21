@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class GunSpecs : MonoBehaviour
 {
-    public static float rateOfFire = 1f;
+    public static float rateOfFire = 2.0f;
     public static string gunType = "Pistol";
-    public static float bulletDamage = 1f;
-    public static float bulletSpeed = 10f;
+    public static float bulletDamage = 1.0f;
+    public static float bulletSpeed = 10.0f;
     // Start is called before the first frame update
     void Start()
     {

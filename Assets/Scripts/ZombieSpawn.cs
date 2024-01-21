@@ -6,7 +6,7 @@ public class ZombieSpawn : MonoBehaviour
 {
     public Transform zombieSpawnPoint;
     public GameObject zombiePrefab;
-    public float spawnRate = 10f;
+    public float spawnRate = 10.0f;
     void Start()
     {
         InvokeRepeating(nameof(SpawnZombie), 0, spawnRate);
@@ -15,7 +15,6 @@ public class ZombieSpawn : MonoBehaviour
     void SpawnZombie()
     {
         zombieSpawnPoint.position = new Vector3(zombieSpawnPoint.position.x, Random.Range(4.0f,-4.0f), 0);
-        var bullet = Instantiate(zombiePrefab, zombieSpawnPoint.position, zombieSpawnPoint.rotation);
-        bullet.GetComponent<Rigidbody2D>().velocity = zombieSpawnPoint.right * spawnRate;
+        var zombie = Instantiate(zombiePrefab, zombieSpawnPoint.position, zombieSpawnPoint.rotation);
     }
 }

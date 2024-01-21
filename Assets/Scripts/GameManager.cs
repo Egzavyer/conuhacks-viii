@@ -6,10 +6,12 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
-    //public static float score;
+    public static int cash = 0;
+    public static int wave = 1;
 
     void Start()
     {
+
     }
 
     void Update()
