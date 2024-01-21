@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //Get the player's rigidbody
         playerRb = GetComponent<Rigidbody2D>();
+        playerRb.interpolation = RigidbodyInterpolation2D.Interpolate;
         
     }
 

@@ -28,11 +28,13 @@ public class ZombieType : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //zombie takes damage if it is hit by a bullet
         if (collision.gameObject.CompareTag("Bullet"))
         {
             health -= damage;
             animatorZombie.SetBool("isHit", true);
             StartCoroutine(ResetIsHit());
+            //zombie dies if it has no health
             if (health <= 0)
             {
                 Destroy(gameObject);
@@ -43,6 +45,7 @@ public class ZombieType : MonoBehaviour
 
     private IEnumerator ResetIsHit()
     {
+        //resets the isHit bool in the animator
         yield return new WaitForSeconds(0.1f);
         animatorZombie.SetBool("isHit", false);
     }
@@ -50,6 +53,7 @@ public class ZombieType : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //zombie dies if it hits the game over line
         if (other.gameObject.CompareTag("GameOverLine"))
         {
             GameManager.GameOver();

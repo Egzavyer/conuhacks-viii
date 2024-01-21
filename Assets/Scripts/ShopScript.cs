@@ -72,7 +72,6 @@ public class ShopScript : MonoBehaviour
         if (PlayerPrefs.GetInt("coins") >= 10)
         {
             Time.timeScale = 1;
-            Debug.Log("Bought");
             PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt("coins") - 10);
             shopItemName3.GetComponent<TMP_Text>().text = "Bought";
             shopItemPrice3.GetComponent<TMP_Text>().text = "";

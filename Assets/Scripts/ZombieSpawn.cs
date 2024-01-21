@@ -24,11 +24,9 @@ public class ZombieSpawn : MonoBehaviour
             zombieSpawnPoint.position = new Vector3(zombieSpawnPoint.position.x, Random.Range(4.0f, -4.0f), 0);
             var zombie = Instantiate(zombiePrefab, zombieSpawnPoint.position, zombieSpawnPoint.rotation);
             zombieCounter += 1;
-            Debug.Log(zombieCounter);
         }
         if (zombieCounter == maxZombie && GameObject.Find("Zombie(Clone)") == null)
         {
-            Debug.Log("Wave Ended");
             GameManager.NextWave();
         }
     }

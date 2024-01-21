@@ -56,8 +56,7 @@ public class GameManager : MonoBehaviour
 
     public static void GameOver()
     {
-        //Debug.Log("Game Over");
-        //score = ScoreText.score;
+      
         PlayerPrefs.SetInt("cash", cash);
         SceneManager.LoadScene("GameOver");
     }
