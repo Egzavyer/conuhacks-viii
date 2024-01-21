@@ -58,9 +58,15 @@ public class ZombieType : MonoBehaviour
     }
     private void Death()
     {
-          
+        Debug.Log("Death Triggered");
         animatorZombie.SetTrigger("death");
-        zombieRB.bodyType = RigidbodyType2D.Static;
+    
          
+    }
+    public void ZombieDeathComplete()
+    {
+        // This method will be called when the death animation is complete
+        Debug.Log("Zombie Death Complete");
+        Destroy(gameObject);
     }
 }
