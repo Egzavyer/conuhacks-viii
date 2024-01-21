@@ -146,6 +146,7 @@ MonoBehaviour:
   damage: 0
   animatorZombie: {fileID: 2961500043638631216}
   isDying: 0
+  gameManager: {fileID: 7134349159215999550, guid: 4ebea6f2590dc8041a094299d371233d, type: 3}
 --- !u!61 &2828831353746660708
 BoxCollider2D:
   m_ObjectHideFlags: 0

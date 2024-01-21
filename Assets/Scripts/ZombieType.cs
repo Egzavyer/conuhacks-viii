@@ -12,6 +12,7 @@ public class ZombieType : MonoBehaviour
     Rigidbody2D zombieRB;
     public Animator animatorZombie;
     public bool isDying = false;
+    public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,10 +35,11 @@ public class ZombieType : MonoBehaviour
             StartCoroutine(ResetIsHit());
             if (health <= 0 )
         {
-            Death();
+             Destroy(gameObject);
+             gameManager.UpdateCash();
         }
            
-            //GameManager.cash += (10 * (GameManager.wave / 2));
+            
         
         }
     }
@@ -56,17 +58,5 @@ public class ZombieType : MonoBehaviour
             GameManager.GameOver();
         }
     }
-    private void Death()
-    {
-        Debug.Log("Death Triggered");
-        animatorZombie.SetTrigger("death");
-    
-         
-    }
-    public void ZombieDeathComplete()
-    {
-        // This method will be called when the death animation is complete
-        Debug.Log("Zombie Death Complete");
-        Destroy(gameObject);
-    }
+   
 }
