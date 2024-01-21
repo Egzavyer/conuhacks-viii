@@ -30,6 +30,7 @@ public class GameOverUI : MonoBehaviour
     public void RestartGame()
     {
         ScoreText.score = 0f;
+        GameManager.wave = 1;
         SceneManager.LoadScene("main");
     }
 }
