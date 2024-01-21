@@ -43,10 +43,12 @@ public class ShopScript : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("coins") >= 40)
         {
+            Time.timeScale = 1;
             PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt("coins") - 40);
             shopItemName1.GetComponent<TMP_Text>().text = "Bought";
             shopItemPrice1.GetComponent<TMP_Text>().text = "";
             shopItemButton1.GetComponent<UnityEngine.UI.Button>().interactable = false;
+            Time.timeScale = 0;
         }
 
     }
@@ -55,10 +57,12 @@ public class ShopScript : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("coins") >= 20)
         {
+            Time.timeScale = 1;
             PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt("coins") - 20);
             shopItemName2.GetComponent<TMP_Text>().text = "Bought";
             shopItemPrice2.GetComponent<TMP_Text>().text = "";
             shopItemButton2.GetComponent<UnityEngine.UI.Button>().interactable = false;
+            Time.timeScale = 0;
         }
 
     }
@@ -67,11 +71,13 @@ public class ShopScript : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("coins") >= 10)
         {
+            Time.timeScale = 1;
             Debug.Log("Bought");
             PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt("coins") - 10);
             shopItemName3.GetComponent<TMP_Text>().text = "Bought";
             shopItemPrice3.GetComponent<TMP_Text>().text = "";
             shopItemButton3.GetComponent<UnityEngine.UI.Button>().interactable = false;
+            //Time.timeScale = 0;
         }
     }
 }
