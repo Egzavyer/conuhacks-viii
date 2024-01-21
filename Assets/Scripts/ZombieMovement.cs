@@ -6,6 +6,7 @@ public class ZombieMovement : MonoBehaviour
 {
     public float zombieMovementSpeed = 5f;
 
+
     private Rigidbody2D zombieRB;
     void Start()
     {

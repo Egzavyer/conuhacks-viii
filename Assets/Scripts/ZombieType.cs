@@ -10,6 +10,7 @@ public class ZombieType : MonoBehaviour
     public float damage;
     GunSpecs gunSpecs;
     Rigidbody2D zombieRB;
+    public Animator animatorZombie;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,14 +24,19 @@ public class ZombieType : MonoBehaviour
     {
         if (health <= 0) {
             Destroy(gameObject);
+            //animatorZombie.SetBool("isDead", true);
             //GameManager.cash += (10 * (GameManager.wave / 2));
         }
+        //animatorZombie.SetBool("isDead", false);
     }
     private void OnCollisionEnter2D(Collision2D collision) 
         {
             if (collision.gameObject.CompareTag("Bullet")) {
                 health -= damage;
+                animatorZombie.SetBool("isHit", true);
+
             }
+             animatorZombie.SetBool("isHit", false);
         }
 
     private void OnTriggerEnter2D(Collider2D other) {

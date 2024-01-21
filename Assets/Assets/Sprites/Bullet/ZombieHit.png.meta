@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6ea556f0e18d36546bb73e8f81de922f
+guid: d2382a7ed63d2433ab71e691eb057f33
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,19 +81,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -123,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ZombieWalk_0
+      name: ZombieHit_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12c652837c422472dab90761892f319d
-      internalID: -1402370533
+      spriteID: a28848f183fac433c8571659aa418782
+      internalID: -280531988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieWalk_1
+      name: ZombieHit_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e4235f47cbb54dcd918e362a994d935
-      internalID: 1629479470
+      spriteID: 9e8d25c129c9c4f2e8034c262f4c22ea
+      internalID: -1133576861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ZombieWalk_2
+      name: ZombieHit_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,8 +166,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54b1267425a194e2e9beb4c43c0df19b
-      internalID: 1865100886
+      spriteID: f7163addb4b6141cc884f13f0c0ab1cf
+      internalID: -1812192508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieHit_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45aad30e3b26146f395ffa044e4c5f3b
+      internalID: -1810151588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieHit_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e161806afc0e4b338bf67f68053caa5
+      internalID: 214736154
       vertices: []
       indices: 
       edges: []
@@ -196,9 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ZombieWalk_0: -1402370533
-      ZombieWalk_1: 1629479470
-      ZombieWalk_2: 1865100886
+      ZombieHit_0: -280531988
+      ZombieHit_1: -1133576861
+      ZombieHit_2: -1812192508
+      ZombieHit_3: -1810151588
+      ZombieHit_4: 214736154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
