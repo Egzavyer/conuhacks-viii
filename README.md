@@ -6,3 +6,5 @@ https://play.unity.com/mg/other/last-stand-6
 Made by:
  - Xavier Lermusieaux
  - Aya Debbagh
+
+Note: Commits are not representative of contribution as we used eachother' computers. Contact me at xavier.lermusieaux@gmail.com for more information about a specific contribution.
